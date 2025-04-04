@@ -995,7 +995,7 @@ def run_workflows(
             filename = document.original_filename or ""
             current_filename = document.filename or ""
             added = timezone.localtime(document.added)
-            created = timezone.localtime(document.created)
+            created = document.created
         else:
             title = overrides.title if overrides.title else str(document.original_file)
             doc_url = ""
@@ -1017,7 +1017,7 @@ def run_workflows(
             filename = document.original_file if document.original_file else ""
             current_filename = filename
             added = timezone.localtime(timezone.now())
-            created = timezone.localtime(overrides.created)
+            created = overrides.created
 
         subject = (
             parse_w_workflow_placeholders(
@@ -1083,7 +1083,7 @@ def run_workflows(
             filename = document.original_filename or ""
             current_filename = document.filename or ""
             added = timezone.localtime(document.added)
-            created = timezone.localtime(document.created)
+            created = document.created
         else:
             title = overrides.title if overrides.title else str(document.original_file)
             doc_url = ""
@@ -1105,7 +1105,7 @@ def run_workflows(
             filename = document.original_file if document.original_file else ""
             current_filename = filename
             added = timezone.localtime(timezone.now())
-            created = timezone.localtime(overrides.created)
+            created = overrides.created
 
         try:
             data = {}
