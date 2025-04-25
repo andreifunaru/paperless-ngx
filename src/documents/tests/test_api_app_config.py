@@ -52,6 +52,8 @@ class TestApiAppConfig(DirectoriesMixin, APITestCase):
                 "app_title": None,
                 "app_logo": None,
                 "ai_enabled": False,
+                "llm_embedding_backend": None,
+                "llm_embedding_model": None,
                 "llm_backend": None,
                 "llm_model": None,
                 "llm_api_key": None,
