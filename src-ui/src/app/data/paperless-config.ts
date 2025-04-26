@@ -55,7 +55,7 @@ export const ConfigCategory = {
 
 export const LLMEmbeddingBackendConfig = {
   OPENAI: 'openai',
-  LOCAL: 'local',
+  HUGGINGFACE: 'huggingface',
 }
 
 export const LLMBackendConfig = {
