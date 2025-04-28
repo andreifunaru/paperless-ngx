@@ -147,7 +147,5 @@ class AIConfig(BaseConfig):
 
     def llm_index_enabled(self) -> bool:
         return (
-            self.ai_enabled
-            and self.llm_embedding_backend
-            and self.llm_embedding_backend
+            self.ai_enabled and self.llm_embedding_backend and self.llm_embedding_model
         )
